@@ -1,0 +1,195 @@
+/* ------------------------------
+   Global Styles
+------------------------------ */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container spacing */
+main, header, footer, section {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* ------------------------------
+   Navigation Bar
+------------------------------ */
+nav {
+    background-color: #2e7d32; /* GreenTech green */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* ------------------------------
+   Headers
+------------------------------ */
+header {
+    text-align: center;
+    background-color: #e8f5e9;
+    border-bottom: 2px solid #c8e6c9;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin-top: 0;
+}
+
+/* ------------------------------
+   Sections
+------------------------------ */
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+/* ------------------------------
+   Product Images
+------------------------------ */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* ------------------------------
+   Contact Form
+------------------------------ */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+form button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #1b5e20;
+}
+
+/* ------------------------------
+   Footer
+------------------------------ */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #2e7d32;
+    color: white;
+    margin-top: 30px;
+}
+
+/* ------------------------------
+   Responsive Navigation
+------------------------------ */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* ------------------------------
+   Additional Mobile Styles
+------------------------------ */
+@media (max-width: 768px) {
+
+    /* Make sections full width */
+    section {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    /* Resize headers */
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    /* Product articles stack nicely */
+    article {
+        margin-bottom: 20px;
+    }
+
+    /* Images scale smoothly */
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Form fields full width */
+    form input,
+    form textarea,
+    form button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* Even smaller screens */
+@media (max-width: 480px) {
+
+    nav ul li {
+        margin: 8px 0;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    section h2 {
+        font-size: 1.2rem;
+    }
+}
